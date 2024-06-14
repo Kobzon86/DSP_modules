@@ -115,5 +115,5 @@ always_ff @(posedge clk or negedge rst_n) begin : proc_axi_out
         axis_o_tdata <= (TRUNCATE == "TRUE") ? comb_dl[M]>>>(M*$clog2(R)) : comb_dl[M];
     end
 end
-///////////direct implementation for check
+    
 endmodule : CIC
