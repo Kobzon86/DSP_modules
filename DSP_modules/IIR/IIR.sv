@@ -14,18 +14,12 @@ module IIR #(
 	input                 rst_n        ,
 	                                     /////////////////////input AXIst
 	input        [IW-1:0] axis_i_tdata ,
-	// input        [ IW_FULL/8-1:0] axis_i_tkeep ,
-	// input                axis_i_tuser ,
 	input                 axis_i_tvalid,
 	output logic          axis_i_tready,
-	// input                axis_i_tlast ,
 	                                     /////////////////////output AXIst
 	output logic [OW-1:0] axis_o_tdata ,
-	// output logic [ OW_FULL/8-1:0] axis_o_tkeep ,
-	// output logic         axis_o_tuser ,
 	output logic          axis_o_tvalid,
 	input                 axis_o_tready
-	// output logic         axis_o_tlast
 );
 
 ///////////////////////////
